@@ -1,0 +1,21 @@
+public class CreateContactExample {
+
+    // Method to create a new Contact record
+    public static void createContact(String firstName, String lastName, String email, String phone) {
+        
+        // Create a new Contact object
+        Contact newContact = new Contact();
+        
+        // Set the field values for the Contact
+        newContact.FirstName = firstName;
+        newContact.LastName = lastName;
+        newContact.Email = email;
+        newContact.Phone = phone;
+        
+        // Insert the Contact record
+        insert newContact;
+        
+        // Output the ID of the newly created Contact record
+        System.debug('New Contact created with ID: ' + newContact.Id);
+    }
+}
