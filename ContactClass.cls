@@ -5,9 +5,9 @@ public class ContactClass {
         insert new Contact(LastName=lastName);
     }
 
-    public void deleteContact(Id contactId)
+    public void deleteContact(List<STring> contactList)
     {
-        delete [select Id from Contact where Id=:contactId];
+        delete contactList; 
     }
 
 }
